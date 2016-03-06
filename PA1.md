@@ -5,8 +5,11 @@
 ## 1) Loading and preprocessing the data
 
 ```r
+library(plyr)
+
 setwd("C:/Users/Media Center/Documents/data")
 activity <-read.csv('activity.csv', stringsAsFactors=FALSE, header=TRUE)
+activity <- na.omit(activity)
 ```
 
 What is mean total number of steps taken per day?
