@@ -174,27 +174,27 @@ We will use the mean for that 5 minute interval to fill the NAs:
 
 ```r
 newdataset <- activity
-j<- 0
+m<- 0
 i<- 0
 
 for (i in 1:nrow(activity))
   
   {
   
-  j<- j+1
+  m<- m+1
   
    if (is.na(newdataset$steps[i])==TRUE) 
     
     
-      {   newdataset$steps[i] <- meaninterval$meaninterval[j]
+      {   newdataset$steps[i] <- meaninterval$meaninterval[m]
       
     
       }
 
-    if(j == nrow(meaninterval))  
+    if(m == nrow(meaninterval))  
       
       { 
-        j<- 0
+        m<- 0
       
       }
   
