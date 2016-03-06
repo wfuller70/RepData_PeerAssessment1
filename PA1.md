@@ -4,11 +4,10 @@
 
 ## 1) Loading and preprocessing the data
 
-
+```r
+setwd("C:/Users/Media Center/Documents/data")
+activity <-read.csv('activity.csv', stringsAsFactors=FALSE, header=TRUE)
 ```
-## Warning: package 'plyr' was built under R version 3.1.1
-```
-
 
 What is mean total number of steps taken per day?
 
